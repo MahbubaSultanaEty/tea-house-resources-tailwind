@@ -19,11 +19,14 @@
     *{
          font-family: "Manrope", sans-serif;
     }
+    .hidden{
+      display: hidden;
+    }
 </style>
   </head>
   <body>
     <!-- banner section -->
-     <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto ">
+     <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto hidden">
       <div class="banner-left space-y-[30px] px-[2rem] mt-16">
         <h2 class="md:text-[70px] text-[50px]  font-bold">It's good  <br>
 tea time at The <br>Tea House</h2>
@@ -42,35 +45,58 @@ tea time at The <br>Tea House</h2>
       </div>
      </section>
      <!-- feature section -->
-      <section class="feature-section container mx-auto mt-7">
-        <div class="text-center max-w-[70%]  mx-auto">
+      <section class="feature-section container mx-auto mt-7 ">
+        <div class="text-center max-w-[70%]  mx-auto ">
           <h2 class="font-bold md:text-[45px] text-4xl">Our Featured Products</h2>
           <p class="text-[#777777] text-xs md:text-[16px] pt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
           </div>
-        <div class="card-container grid md:grid-cols-4 grid-cols-1 gap-4">
-              <div class="featured-card bg-linear-to-b from-white to-[#f4f4f4] p-7 text-center flex flex-col justify-center items-center max-w-[70%] mx-auto md:max-w-[100%]">
+        <div class="card-container grid md:grid-cols-4 grid-cols-1 sm:grid-cols-2  gap-4">
+              <div class="featured-card bg-linear-to-b from-white to-[#f4f4f4] p-7 text-center flex flex-col justify-center items-center max-w-[70%] mx-auto md:max-w-full sm:max-w-full rounded-md">
                 <img src="./images/tea-1.png" alt="" class="mx-auto">
                 <h2 class="font-semibold text-xl pt-6">Milk Tea</h2>
                 <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
               </div>
-              <div class="featured-card bg-linear-to-b from-white to-[#f4f4f4] p-7 text-center flex flex-col justify-center items-center max-w-[70%] mx-auto md:max-w-[100%]">
+              <div class="featured-card bg-linear-to-b from-white to-[#f4f4f4] p-7 text-center flex flex-col justify-center items-center max-w-[70%] mx-auto md:max-w-full sm:max-w-full rounded-md">
                 <img src="./images/tea-2.png" alt="">
                 <h2 class="font-semibold text-xl pt-6">Black Tea</h2>
                 <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
               </div>
-              <div class="featured-card bg-linear-to-b from-white to-[#f4f4f4] p-7 text-center flex flex-col justify-center items-center max-w-[70%] mx-auto md:max-w-[100%]">
+              <div class="featured-card bg-linear-to-b from-white to-[#f4f4f4] p-7 text-center flex flex-col justify-center items-center max-w-[70%] mx-auto sm:max-w-full md:max-w-full rounded-md">
                 <img src="./images/tea-3.png" alt="">
                 <h2 class="font-semibold text-xl pt-6">Lemon Tea</h2>
                 <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
               </div>
-              <div class="featured-card bg-linear-to-b from-white to-[#f4f4f4] p-7 text-center flex flex-col justify-center items-center max-w-[70%] mx-auto md:max-w-[100%]">
+              <div class="featured-card bg-linear-to-b from-white to-[#f4f4f4] p-7 text-center flex flex-col justify-center items-center max-w-[70%] mx-auto sm:max-w-full  md:max-w-full rounded-md">
                 <img src="./images/tea-4.png" alt="">
                 <h2 class="font-semibold text-xl pt-6">Green Tea</h2>
                 <p class="text-[#777777]">Creamer could be replaced by fresh milk</p>
               </div>
-          </div>
-        
+          </div> 
       </section>
+      <!-- great tea section -->
+       <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-20">
+       <div class="great-tea-left grid grid-cols-2 grid-rows-3 gap-4 ">
+         <div class=" bg-linear-to-r from-[#FFD3AC] to-[#FFFDD0] rounded-md "></div>
+          <div class=" row-span-2 rounded-md bg-[#FFFDD0]">
+            <img src="./images/fresh-1.png" alt="" class="mx-auto">
+          </div>
+          <div class=" row-span-2  rounded-md bg-[#EDE8D0]">
+            <img src="./images/fresh-2.png " alt=""class="mx-auto">
+          </div>
+          <div class="  bg-amber-700 rounded-md bg-linear-to-b from-gray-300 to-[#EDE8D0]" ></div>
+          </div>
+       <div class="great-tea-right space-y-4  max-w-[70%] mx-auto sm:max-w-full">
+        <div>
+         <h2 class="font-bold md:text-[45px] text-3xl">Great Tea, Freshly <br> Presented</h2>
+        <p class="text-[#777777]">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+        </div>
+        <h3 class="font-bold text-xl ">Unique Taste</h3>
+        <p class="text-[#777777]">A Unique and different style from other teapots gives a <br> luxurious and minimalist impression</p>
+        <h3 class="font-bold text-xl ">Premium Quality</h3>
+        <p class="text-[#777777] ">Premium Quality that makes tea more elegant and more <br> durable when you use it.</p>
+          </div>
+       </section>
   </body>
 </html>
 
+i
